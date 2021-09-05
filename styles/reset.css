@@ -9,6 +9,7 @@
   }
 
   html {
+    font-family: 'Rosario', sans-serif; 
     scroll-behavior: smooth;
     font-size: 62.5%;
   } 

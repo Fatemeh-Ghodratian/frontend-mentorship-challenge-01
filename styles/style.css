@@ -1,1 +1,246 @@
 @import "reset.css";
+:root{
+    --lightBlueColor: #3498db;
+    --darkGray: #515151;
+    --lightGray:#f1f1f1;
+    --lightPink:rgba(226, 108, 120, 0.15);
+    --lightColor: #fff;
+    --darkGreenColor : #16a085;
+
+}
+/* start header*/
+navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: var(--lightBlueColor);
+    color:var(--lightColor);
+    font-size: 1.3rem;
+}
+#user{
+    font-size: 2rem;
+    color: var(--lightColor);
+}
+#slider{
+    background: url("../images/wild-life.jpg") center no-repeat;
+    background-size:cover;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#slider h2{
+    font-size: 4rem;
+    margin-left: 10%;
+    color:var(--lightColor);
+}
+#slider a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 20%;
+    max-width: 10%;
+    padding: 1rem .6rem;
+    background: var(--lightColor);
+    color: var(--darkGray);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius:0 2rem 0 2rem ;
+    box-shadow: .1rem .5rem .5rem var(--darkGray);
+}
+#slider a:hover{
+    background: var(--lightBlueColor);
+    color: var(--lightColor)
+}
+/* end header*/
+/*start gallery section*/
+.gallery{
+    background: var(--lightColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:100vh;
+    padding: 2rem 5rem;
+    color:var(--lightColor);
+    row-gap:2rem;
+}
+.gallery h2{
+    color: var(--darkGray);
+    font-size: 3rem;
+    
+}
+.galleryItems{
+    display:  inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.galleryItems div{
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    align-items: flex-end;   
+}
+.galleryItems img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 0px 10px 10px -5px rgba(0,0,0,.8);
+    
+}
+.galleryItems span{
+    position: absolute;
+    margin: 0 0 3rem 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#offer{
+    background: linear-gradient(to top, rgba(0,0,0,.9),transparent), url("../images/luxury-hotel.jpg") center no-repeat;
+    background-size:cover;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+}
+#offerTitle {
+    position: absolute;
+    margin: 0 0 10rem 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#offerDescribe{
+    position: absolute;
+    margin: 0 0 7rem 3rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+#offer a{
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background: var(--lightColor);
+    color: var(--darkGray);
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 2rem  2rem ;
+    margin: 0 0 3rem 4rem;
+}
+#offer a:hover{
+    background: var(--darkGreenColor);
+    color: var(--lightColor)
+}
+
+/*end gallery section*/
+/*start explore section*/
+.explore{
+    background-color: var(--lightPink);
+    min-height: 80vh;
+    padding:  3rem 5rem;
+    max-width: 100vw;
+    display:flex;
+    flex-direction: column;
+}
+.explorePics div{
+    width: 40rem;
+    height: 35rem;
+    background: var(--lightColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explorePics{
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.explorePics a,span{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.like:hover{
+    display: none;
+}
+.explore img{
+    width: 100%;
+    max-height: 70%;
+    object-fit: fill;
+}
+.likePics{
+    background: var(--lightColor);
+    border-radius: 50%;
+    position: absolute;
+    align-self: flex-end;
+    margin: 1rem;
+}
+/*end exploe section*/
+/*start footer*/
+footer{
+    display:flex;
+    flex-direction: column;
+    padding: 3rem 3rem;
+    font-size: 1.2rem;
+}
+hr{
+    opacity: 0.2;
+}
+footer div{
+    margin: 1rem 0;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;  
+}
+footer li{
+    display:inline;
+}
+footer a{
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+footer p{
+    color: var(--darkGray);
+    font-family: 'Roboto', sans-serif;
+    text-align: start;
+}
+#downloadLink, #downloadIcon{
+    color: var(--lightBlueColor)
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 1.3rem;
+    color: black;
+    padding: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--lightGray);
+    min-width: 10rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: .3rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+.dropdown-content a:hover {color:var(--lightBlueColor);}
+
+.dropdown:hover .dropdown-content {display: block;}
+/*end footer*/
